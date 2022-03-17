@@ -1,0 +1,72 @@
+.header {
+  height: 5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 5;
+  display: flex;
+  justify-content: space-between;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header_middle {
+  display: flex;
+  align-items: center;
+}
+
+.header_left {
+  display: block;
+  overflow: hidden;
+  padding: 0 0 0 20px;
+}
+
+.header_logo {
+  height: 100%;
+  width: 13rem;
+  font-weight: 500;
+  text-transform: none;
+}
+
+.header_right {
+  margin: auto 0;
+  margin-top: 20px;
+  margin-right: 1rem;
+  /* width: auto;
+  height: auto;
+  border-radius: 15px;
+  background: #0000000d; */
+  padding: 4px 8px;
+  font-size: 14px;
+}
+
+.header_nav_btn {
+  /* 가운데 메뉴들은 안보임 */
+  display: none;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 1rem;
+  color: var(--secondary-color);
+  border-radius: 1.5rem;
+  text-transform: capitalize;
+  transition: background 0.3s linear;
+}
+
+.header_nav_btn:hover {
+  background: rgba(0, 0, 0, 0.08);
+}
+
+.header_nav_btn.menu_btn {
+  display: inline-block;
+  margin: 0px 8px;
+  color: #171a20;
+}
+
+.header_middle .header_nav_btn {
+  margin-right: 2rem;
+}
